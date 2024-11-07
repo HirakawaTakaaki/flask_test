@@ -8,7 +8,7 @@
 ## 実行画面
 ![実行画面](https://github.com/user-attachments/assets/e3f4d4f2-ffab-48da-a349-13d197befe0d)
 
-## demo
+## Demo
 ![デモ](https://github.com/user-attachments/assets/46b33579-7b94-4869-b254-a6942c22abe5)
 
 ## 技術スタック
