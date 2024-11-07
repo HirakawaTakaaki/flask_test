@@ -12,5 +12,6 @@
 ![デモ](https://github.com/user-attachments/assets/46b33579-7b94-4869-b254-a6942c22abe5)
 
 ## 技術スタック
-* 主にPython、Flaskを使い実装
+* バックエンドはPython
+* フレームワークはFlask
 * 形態素解析にはMeCabを使用
