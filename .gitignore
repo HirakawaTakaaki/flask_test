@@ -1,0 +1,3 @@
+# 大きなファイルや不要なファイルを無視する
+myenv/lib/python3.9/site-packages/unidic_lite/dicdir/sys.dic
+

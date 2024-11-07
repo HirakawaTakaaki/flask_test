@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>WordCloud作成</title>
+    <meta charset="UTF-8">
+    <!-- FlaskのstaticフォルダからCSSを読み込む -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- FlaskのstaticフォルダからJavaScriptを読み込む -->
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}" defer></script> -->
+</head>
+<body>
+    <h1>WordCloud作成</h1>
+    <p>選択したテキストファイルをもとにワードクラウドを生成します</p>
+    <form id="upload-form" action="/upload_and_generate" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="text/plain" required>
+        <!-- <input type="text" name="stop_words" placeholder="選択した単語を削除"> -->
+        <input type="submit" value="生成">
+    </form>
+
+    {% if content %}
+        <div>
+            <h3>テキストファイルの内容</h3>
+            <textarea id="result" rows="7" cols="120" readonly>{{ content }}</textarea>
+        </div>
+    {% endif %}
+
+    {% if wordcloud_url %}
+        <div id="wordcloud-container">
+            <div id="wordcloud">
+                <iframe src="{{ wordcloud_url }}" width="850" height="650" frameborder="1"></iframe>
+            </div>
+            <div id="word-list">
+                <div><h3>出現ワード（出現回数）</h3></div>
+                <form id="regenerate-form" action="/regenerate" method="post">
+                    <div id="words">
+                    <ul class="test">
+                    {% for word, count in word_list %}
+                        <li><label><input type="checkbox" name="no_display_words" value="{{ word }}">{{ word }} ({{ count }})</label></li>
+                    {% endfor %}
+                    </ul>
+                    </div>
+                    <input type="hidden" name="content" value="{{ content }}">
+                    <input type="hidden" name="ng_words" value="{{ ng_words|join(',') }}">
+                    <input type="submit" value="選択した単語を削除" title="選択した単語をワードクラウドから削除します">
+                    <button type="button" id="clear-button" title="ワードクラウドを最初の状態に戻します">リセット</button>
+                </form>
+            </div>
+        </div>
+    {% endif %}
+    
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", function(event) {
+            var fileInput = document.querySelector('input[type="file"]');
+            if (!fileInput.files[0]) {
+                event.preventDefault(); // フォームの送信を中止
+                alert("ファイルがアップロードされていません。"); // アラートダイアログを表示
+            }
+        });
+
+        // クリアボタンがクリックされたときにng_wordsを空にしてフォームを送信する関数
+        document.getElementById("clear-button").onclick = function() {
+            document.querySelector("#regenerate-form input[name='ng_words']").value = "";
+            document.getElementById("regenerate-form").submit();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+  232  git remote add origin https://github.com/HirakawaTakaaki/flask_wordcloud.git
+  233  git push -u origin main\n
+  234  git push -u origin main\n
+  235  git push -u origin main\n
+  236  git remote -v\n
+  237  git remote set-url origin https://github.com/HirakawaTakaaki/flask_wordcloud.git
+  238  git push -u origin main\n
+  239  git credential-cache exit\n
+  240  git push -u origin main\n
+  241  git credential-cache exit\n
+  242  git push -u origin main\n
+  243  source bin/activate
+  244  cd myenv
+  245  source bin/activate
+  246  pip list
+  247  pip install wordcloud
+    1  docker version
+    2  docker run hello-world\n
+    3  docker run hello-world\n
+    4  docker images
+    5  exit
+    6  docker version
+    7  docker ps
+    8  docker ps -a
+    9  docker run hello-world
+   10  docker ps
+   11  docker search nginx
+   12  docker version
+   13  docker version
+   14  docker version
+   15  docker version
+   16  docker version
+   17  docker version
+   18  docker search nginx
+   19  docker version
+   20  docker run hello-world
+   21  docker run hello-world
+   22  docker search nginx
+   23  ls
+   24  cd cev
+   25  cd dev
+   26  ls
+   27  docker image ls
+   28  ls
+   29  cd docker_python
+   30  touch requirements.txt
+   31  ls
+   32  touch Dockerfile
+   33  ls
+   34  docker image build -t pythonconsole .
+   35  docker image build -t pythonconsole .
+   36  docker run -it -v ./code:/code pythonconsole bash
+   37  docker ps
+   38  exit
+   39  ls
+   40  cd dev/React
+   41  ls
+   42  docker-compose build
+   43  docker version
+   44  docker-compose version
+   45  sudo apt-get update
+   46  ls -a
+   47  cd dev
+   48  ls
+   49  cd React
+   50  touch docker-compse.yml
+   51  ls
+   52  cat docker-compse.yml
+   53  vi docker-compse.yml
+   54  cat docker-compse.yml
+   55  touch Dockerfile
+   56  vi Dockerfile
+   57  cat Dockerfile
+   58  mkdir front
+   59  docker-compose build
+   60  sudo apt-get update
+   61  sudo apt-get update
+   62  exit
+   63  docker-v
+   64  docker version
+   65  exit
+   66  ls
+   67  pwd
+   68  git clone https://github.com/HirakawaTakaaki/react-docker.git
+   69  cd ../
+   70  mkdir GitHub
+   71  ls
+   72  cd GitHub
+   73  pwd
+   74  git clone https://github.com/HirakawaTakaaki/react-docker.git
+   75  cd react-docker
+   76  vi Dockerfile
+   77  cat Dockerfile
+   78  vi docker-compose.yml
+   79  docker-compose run front yarn create react-app myapp
+   80  docker compose run front yarn create react-app myapp
+   81  docker compose run front yarn create reactApp myapp
+   82  docker-compose run --rm react-app sh -c "npm install -g create-react-app && create-react-app react-app"\n
+   83  docker compose run --rm react-app sh -c "npm install -g create-react-app && create-react-app react-app"\n
+   84  docker compose run front yarn create react-app app
+   85  docker compose run front yarn create react-app app
+   86  docker compose build
+   87  docker compose up -d
+   88  docker ps
+   89  docker ps
+   90  ls
+   91  docker compose down
+   92  docker ps
+   93  ls
+   94  $ docker compose build
+   95  docker compose build
+   96  docker compose build
+   97  docker compose build
+   98  docker compose run --rm node sh -c 'npx create-react-app react-ts-app --template typescript'
+   99  docker compose up -d
+  100  histry
+  101  docker-compose version
+  102  docker compose version
+  103  histry
+  104  cd react-docker
+  105  ls
+  106  npm start
+  107  histry >> test.txt
+  108  yarn start
+  109  docker compose up -d
+  110  docker ps
+  111  node -v
+  112  npm start
+  113  curl -sL https://firebase.tools | bash
+  114  ls
+  115  cd dev
+  116  ls
+  117  curl -sL https://firebase.tools | bash
+  118  fireebase loging
+  119  firebase loging
+  120  firebase login
+  121  npm install -g firebase-tools
+  122  curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"\nsudo installer -pkg AWSCLIV2.pkg -target /
+  123  curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+  124  sudo installer -pkg ./AWSCLIV2.pkg -target /
+  125  which aws
+  126  aws --version
+  127  pwd
+  128  cd ../
+  129  ls -a
+  130  ls -a /dev/
+  131  pwd
+  132  ls -a /Users
+  133  mkdir ~/.ssh\n
+  134  ls
+  135  ls -a
+  136  cp Downloads/aws_key.pem .ssh
+  137  ls -a .ssh
+  138  scp -i ~/.ssh/aws_key.pem test.txt ec2-user@35.175.196.20:/home/ec2-user/\n
+  139  scp -i ~/.ssh/aws_key.pem ec2-user@35.175.196.20:/home/ec2-user/myapp myapp
+  140  scp -i ~/.ssh/aws_key.pem ubunthu@35.175.196.20:/home/ec2-user/myapp myapp
+  141  ls
+  142  cd dev
+  143  ls
+  144  mkdir aws_ec2
+  145  cd aws_ec2
+  146  scp -i ~/.ssh/aws_key.pem ubunthu@35.175.196.20:/home/ec2-user/myapp .
+  147  chmod 600 /Users/takaaki/.ssh/aws_key.pem
+  148  scp -i ~/.ssh/aws_key.pem ubunthu@35.175.196.20:/home/ec2-user/myapp .
+  149  pwd
+  150  cd /Users/takaaki/.ssh
+  151  chmod 600 aws_key.pem
+  152  ls -l
+  153  cd /Users/takaaki/dev/aws_ec2
+  154  scp -i ~/.ssh/aws_key.pem ubunthu@35.175.196.20:/home/ec2-user/myapp .
+  155  scp -i ~/.ssh/aws_key.pem ubuntu@35.175.196.20:/home/ec2-user/myapp .
+  156  scp -i ~/.ssh/aws_key.pem ubuntu@35.175.196.20:/home/ubuntu .
+  157  scp -i ~/.ssh/aws_key.pem -r ubuntu@35.175.196.20:/home/ubuntu .
+  158  cp /Users/takaaki/Downloads/conoha-key-20241106.pem /Users/takaaki/.ssh
+  159  ls -l /Users/takaaki/.ssh
+  160  chmod 600 /Users/takaaki/.ssh/conoha-key-20241106.pem
+  161  ls -l /Users/takaaki/.ssh
+  162  exit
+  163  firebase login\n
+  164  cd /dev/
+  165  ls
+  166  pwd
+  167  cd ../
+  168  pwd
+  169  mkdir /myapp
+  170  ls
+  171  /Users/takaaki/dev
+  172  cd /Users/takaaki
+  173  ls
+  174  cd /dev
+  175  ls
+  176  cd ../
+  177  pwd
+  178  ls /Users
+  179  ls /Users/takaaki
+  180  ls /Users/takaaki/dev
+  181  ls /Users/takaaki/dev/aws_ec2/
+  182  ls /Users/takaaki/dev/aws_ec2/ubuntu/myapp
+  183  cd /Users/takaaki/dev/aws_ec2/ubuntu/myapp
+  184  firebase init hosting
+  185  firebase init hosting
+  186  firebase init hosting
+  187  firebase init hosting
+  188  firebase init hostingexit
+  189  exit
+  190  ls
+  191  cd dev
+  192  ls
+  193  cd GitHub
+  194  ls
+  195  mkdir flask_wordcloud
+  196  l
+  197  ls
+  198  python3 --version
+  199  python3 list
+  200  cd flask_wordcloud
+  201  mkdir myenv
+  202  ls
+  203  cd myenv
+  204  python3 -m venv .
+  205  ls
+  206  source bin/activate
+  207  python --version
+  208  pip install flask
+  209  pip list
+  210  /Users/takaaki/dev/GitHub/flask_wordcloud/myenv/bin/python3 -m pip install --upgrade pip
+  211  pip list
+  212  pip install gunicorn
+  213  pip list
+  214  cd ../
+  215  touch app.py
+  216  ls
+  217  python3 app.py
+  218  pip freeze > requirements.txt
+  219  ls
+  220  touch Procfile
+  221  git@github.com:HirakawaTakaaki/flask_wordcloud.git
+  222  history
+  223  history >> history_1107.txt
+  224  deactivate
+  225  history >> history_20241107.txt
+  226  git init
+  227  ls
+  228  git add .
+  229  git commit -m "初回コミット"
+  230  git status\n
+  231  https://github.com/HirakawaTakaaki/flask_wordcloud.git
+  232  git remote add origin https://github.com/HirakawaTakaaki/flask_wordcloud.git
+  233  git push -u origin main\n
+  234  git push -u origin main\n
+  235  git push -u origin main\n
+  236  git remote -v\n
+  237  git remote set-url origin https://github.com/HirakawaTakaaki/flask_wordcloud.git
+  238  git push -u origin main\n
+  239  git credential-cache exit\n
+  240  git push -u origin main\n
+  241  git credential-cache exit\n
+  242  git push -u origin main\n
+  243  source bin/activate
+  244  cd myenv
+  245  source bin/activate
+  246  pip list
+  247  pip install wordcloud
+  248  history >> test.txt
